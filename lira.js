@@ -63,38 +63,45 @@ const commandsData = {
             syntax: '/purge <amount>'
         }
     ],
-    fun: [
+    ai: [
         {
-            name: '/8ball',
+            name: '/ask',
             description: 'Ask the magic 8-ball a question',
-            syntax: '/8ball <question>'
+            syntax: '/ask <question>'
         },
         {
-            name: '/meme',
+            name: '/chatbor',
             description: 'Get a random meme',
-            syntax: '/meme'
+            syntax: '/chatbot'
         },
         {
-            name: '/joke',
+            name: '/translate',
             description: 'Tell a random joke',
-            syntax: '/joke'
-        },
-        {
-            name: '/trivia',
-            description: 'Start a trivia game',
-            syntax: '/trivia [category]'
-        },
-        {
-            name: '/rps',
-            description: 'Play rock-paper-scissors',
-            syntax: '/rps <choice>'
+            syntax: '/translate'
         }
     ],
-    utility: [
+        info: [
         {
-            name: '/userinfo',
+            name: '/help',
+            description: 'Ask the magic 8-ball a question',
+            syntax: '/ask <question>'
+        },
+        {
+            name: '/botinfo',
+            description: 'Get a random meme',
+            syntax: '/botinfo'
+        },
+        {
+            name: '/translate',
+            description: 'Tell a random joke',
+            syntax: '/translate'
+        }
+    ],
+    admin: [
+        {
+            name: '/backup-list',
             description: 'Get information about a user',
-            syntax: '/userinfo [@user]'
+            syntax: '/backup-list'
         },
         {
             name: '/serverinfo',
@@ -406,7 +413,7 @@ document.getElementById('invite-btn').addEventListener('click', () => {
     showNotification('Redirecting to Discord...', 'info');
     setTimeout(() => {
         // In a real application, this would redirect to Discord's OAuth2 URL
-        window.open('https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot%20applications.commands', '_blank');
+        window.open('https://discord.com/oauth2/authorize?client_id=1242082181929631784&permissions=8&scope=bot+applications.commands', '_blank');
     }, 1000);
 });
 
