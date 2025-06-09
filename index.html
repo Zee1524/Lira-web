@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiraBot - Advanced Discord Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>LiraBot</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#commands" class="nav-link">Commands</a>
+                <a href="#stats" class="nav-link">Stats</a>
+                <a href="#premium" class="nav-link">Premium</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Meet <span class="gradient-text">LiraBot</span>
+                    <br>Your Ultimate Discord Companion
+                </h1>
+                <p class="hero-description">
+                    Experience the most advanced Discord bot with AI moderation, music streaming, 
+                    gaming features, and so much more. Join over 1M+ servers worldwide!
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="invite-btn">
+                        <i class="fab fa-discord"></i>
+                        Add to Server
+                    </button>
+                    <button class="btn btn-secondary" id="dashboard-btn">
+                        <i class="fas fa-cog"></i>
+                        Dashboard
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="bot-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="status-indicator online"></div>
+                </div>
+                <div class="floating-cards">
+                    <div class="card music-card">
+                        <i class="fas fa-music"></i>
+                        <span>Now Playing</span>
+                    </div>
+                    <div class="card mod-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Auto Mod</span>
+                    </div>
+                    <div class="card game-card">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Games</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need to enhance your Discord server</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music Streaming</h3>
+                    <p>High-quality music from YouTube, Spotify, and SoundCloud with queue management and filters</p>
+                    <div class="feature-tags">
+                        <span class="tag">24/7 Mode</span>
+                        <span class="tag">Queue</span>
+                        <span class="tag">Filters</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>AI Moderation</h3>
+                    <p>Advanced AI-powered moderation system with auto-ban, anti-spam, and content filtering</p>
+                    <div class="feature-tags">
+                        <span class="tag">Auto Ban</span>
+                        <span class="tag">Anti Spam</span>
+                        <span class="tag">Smart Filter</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming Hub</h3>
+                    <p>Mini-games, leaderboards, economy system, and server statistics tracking</p>
+                    <div class="feature-tags">
+                        <span class="tag">Economy</span>
+                        <span class="tag">Mini Games</span>
+                        <span class="tag">Leaderboard</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Server Management</h3>
+                    <p>Complete server management tools with role automation and channel organization</p>
+                    <div class="feature-tags">
+                        <span class="tag">Auto Roles</span>
+                        <span class="tag">Tickets</span>
+                        <span class="tag">Logs</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics</h3>
+                    <p>Detailed server analytics, member insights, and growth tracking dashboard</p>
+                    <div class="feature-tags">
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Insights</span>
+                        <span class="tag">Growth</span>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Assistant</h3>
+                    <p>Intelligent chatbot with natural language processing and custom responses</p>
+                    <div class="feature-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Custom</span>
+                        <span class="tag">Smart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands">
+        <div class="container">
+            <h2 class="section-title">Popular Commands</h2>
+            <div class="commands-container">
+                <div class="command-categories">
+                    <button class="category-btn active" data-category="music">Music</button>
+                    <button class="category-btn" data-category="moderation">Moderation</button>
+                    <button class="category-btn" data-category="fun">Fun</button>
+                    <button class="category-btn" data-category="utility">Utility</button>
+                </div>
+                
+                <div class="commands-list" id="commands-list">
+                    <!-- Commands will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <h2 class="section-title">Trusted Worldwide</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1200000">0</div>
+                    <div class="stat-label">Servers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="25000000">0</div>
+                    <div class="stat-label">Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="99.9">0</div>
+                    <div class="stat-label">Uptime %</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Support 24/7</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="premium">
+        <div class="container">
+            <h2 class="section-title">Upgrade to Premium</h2>
+            <p class="section-subtitle">Unlock advanced features and priority support</p>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <div class="price">Free</div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Basic Commands</li>
+                        <li><i class="fas fa-check"></i> Music Playback</li>
+                        <li><i class="fas fa-check"></i> Basic Moderation</li>
+                        <li><i class="fas fa-times"></i> Priority Support</li>
+                        <li><i class="fas fa-times"></i> Custom Features</li>
+                    </ul>
+                    <button class="btn btn-outline">Current Plan</button>
+                </div>
+
+                <div class="pricing-card premium-card">
+                    <div class="premium-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">$4.99<span>/month</span></div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> All Basic Features</li>
+                        <li><i class="fas fa-check"></i> AI Moderation</li>
+                        <li><i class="fas fa-check"></i> Custom Commands</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                    </ul>
+                    <button class="btn btn-primary">Upgrade Now</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">Custom</div>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> All Premium Features</li>
+                        <li><i class="fas fa-check"></i> Dedicated Support</li>
+                        <li><i class="fas fa-check"></i> Custom Integrations</li>
+                        <li><i class="fas fa-check"></i> White-label Options</li>
+                        <li><i class="fas fa-check"></i> SLA Guarantee</li>
+                    </ul>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LiraBot</h4>
+                    <p>The most advanced Discord bot for your server needs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#">Commands</a>
+                    <a href="#">Support</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Status</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiraBot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lira.js"></script>
+</body>
+</html>
