@@ -64,8 +64,9 @@ body {
     color: var(--primary-color);
 }
 
-.nav-logo i {
-    font-size: 2rem;
+.nav-logo-img {
+    width: 2rem; 
+    height: 2rem;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -267,14 +268,20 @@ body {
     transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
-    background: var(--gradient-1);
+    background: var(--gradient-1); /* bisa lo ganti jadi none kalau gak mau */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
-    color: white;
+    overflow: hidden;
     box-shadow: var(--shadow-heavy);
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .status-indicator {
